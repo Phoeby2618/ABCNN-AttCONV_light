@@ -171,7 +171,7 @@ def  evaluation(sess,epoch,data_dev,model,config):
 def test(data_test,config):
     test_config = copy.deepcopy(config)
     test_config.batch_size = 1
-    esim_test = ABCNN(test_config)
+    esim_test = AttentiveLight(test_config)
 
     with tf.Session() as sess:
 
